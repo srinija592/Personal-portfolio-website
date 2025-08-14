@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satya Srinija Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container center">
+      <h1>Satya Srinija Narayanam</h1>
+      <p>Full-Stack Developer &amp; UI/UX Designer crafting digital<br/>
+      experiences that blend creativity with cutting-edge technology</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#projects">View My Work</a>
+        <a class="btn secondary" href="#contact">Get In Touch</a>
+      </div>
+      <div class="scroll-arrow" id="scrollArrow" tabindex="0" aria-label="Scroll to About">
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-me">
+      <h2>About Me</h2>
+      <p>Welcome to my digital space! I am a Computer Science student with a strong passion for web development and problem-solving. I enjoy exploring how technology can be used to create meaningful solutions that make life easier and more efficient. Over time, I have developed a keen interest in building responsive, user-friendly websites that not only look good but also provide a smooth experience. Constantly learning new technologies and improving my skills keeps me motivated to grow as a developer.</p>
+      <p>My technical skill set spans both frontend and backend development. On the frontend, I work with HTML, CSS, JavaScript, and React to design interfaces that are clean, functional, and engaging. On the backend, I use Python and MySQL to manage data, process logic, and ensure that applications run seamlessly. In addition to web development, I am also exploring areas like machine learning and cybersecurity, which allow me to broaden my technical expertise and understand how software can be applied to solve more complex problems. This balance between core development and advanced concepts helps me stay versatile in the ever-evolving tech space.</p>
+      <p>Beyond academics, I actively take on projects that push me to think critically and apply what I learn in practical ways. These projects not only strengthen my technical skills but also teach me about teamwork, time management, and problem-solving in real-world scenarios. I enjoy collaborating with others, sharing knowledge, and continuously challenging myself to improve. </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="center">Skills &amp; Interests</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="skills-list">
+        <div class="skills-col">
+            <h3>Frontend</h3>
+            <ul>
+                <li>React.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="skills-col">
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+        <div class="skills-col">
+        <h3>Design & UX</h3>
+        <ul>
+          <li>Figma</li>
+          <li>User Research</li>
+          <li>Prototyping</li>
+          <li>Design Systems</li>
+        </ul>
+      </div>
+      </div>
+      <div class="personal-interests">
+        <h3>Personal Interests</h3>
+        <br>
+        <br>
+        <span>AI</span> 
+        <span>Machine Learning</span>
+        <span>Cybersecurity</span> 
+        <span>Open Source</span> 
+        <span>Git & GitHub</span> 
+        <span>Problem solving</span> 
+        <span>DSA</span> 
+        <span>Sustainable Technology</span>
+        <span>Photography</span>
+        <span>Mountain Hiking</span>
+        <span>Minimalist Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="center">Featured Projects</h2>
+      <div class="proj-grid">
+        <div class="project-card">
+          <div class="project-title">Calculator <span class="badge">Live</span></div>
+          <p>A simple and responsive Calculator Application built using HTML, CSS, and JavaScript. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division with a clean and user-friendly interface.</p>
+          <div class="tech-tags">
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <div class="project-overlay">
+            <a href="https://srinija592.github.io/Calculator/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/Calculator" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Landing Page <span class="badge">Live</span></div>
+          <p>A clean and responsive Landing Page built using HTML, and CSS. It is designed to showcase products or services with sections for headings, text, images, and call-to-action buttons, providing a modern and user-friendly layout.</p>
+          <div class="tech-tags">
+            <span>HTML</span> <span>CSS</span> 
+          </div>
+          <div class="project-overlay">
+            <a href="https://srinija592.github.io/Landing_page/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/Landing_page" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">QR Code Generator <span class="badge">Live</span></div>
+          <p>A simple QR Code Generator built using HTML, CSS, and JavaScript. This project allows users to enter any text or URL and instantly generate a scannable QR code. It features a clean, responsive design and provides the option to download the generated QR code for future use.</p>
+          <div class="tech-tags">
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <div class="project-overlay">
+            <a href="https://srinija592.github.io/QR-Code-Generator/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/QR-Code-Generator" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Quiz App <span class="badge">Live</span></div>
+          <p>An interactive Quiz Application built using HTML, CSS, and JavaScript. This app allows users to answer multiple-choice questions, track their score, and get instant feedback on their performance.</p>
+          <div class="tech-tags">
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <div class="project-overlay">
+            <a href="https://srinija592.github.io/Quiz-app/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/Quiz-app" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+         <div class="project-card">
+          <div class="project-title">Stopwatch <span class="badge">Live</span></div>
+          <p>A simple and responsive Stopwatch Application built using HTML, CSS, and JavaScript. It allows users to start, pause, and reset times with ease.</p>
+          <div class="tech-tags">
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <div class="project-overlay">
+            <a href="https://srinija592.github.io/Stopwatch/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/Stopwatch" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+         <div class="project-card">
+          <div class="project-title">To-Do List <span class="badge">Live</span></div>
+          <p>A simple and interactive To-Do List Application built using HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks for better daily task management.</p>
+          <div class="tech-tags">
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <div class="project-overlay">
+            <a href="https://srinija592.github.io/To-Do-List/" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/srinija592/To-Do-List" class="overlay-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <a class="view-github" href="https://github.com/srinija592">View All Projects on GitHub</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+    <div class="contact-top">
+      <div class="contact-title">Let's Connect</div>
+      <div class="contact-desc">I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about technology and design. Feel free to reach out!</div>
+    </div>
+
+    <div class="contact-panel">
+      <!-- Left Column: Contact Info -->
+      <div class="contact-left">
+        <div style="font-weight:700; margin-bottom:.4em;">Get In Touch</div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <span class="contact-info">narayanamsrinija@gmail.com</span>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon"><i class="fab fa-github"></i></span>
+            <div class="contact-details">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-info">github.com/srinija592</span>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-info">linkedin.com/in/satya-srinija-narayanam-96b7952ba</span>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon"><i class="fab fa-twitter"></i></span>
+            <div class="contact-details">
+              <span class="contact-label">Twitter</span>
+              <span class="contact-info">@narayanams60354</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Ready to Start a Project? -->
+      <div class="contact-right">
+        <div class="contact-location">
+          <span class="contact-icon" style="background:transparent; box-shadow:none; color:#a992fc;">
+            <i class="fas fa-location-dot"></i>
+          </span>
+          Hyderabad, Telangana
+        </div>
+        <div class="project-title">Ready to Start a Project?</div>
+        <div class="project-desc">
+          I'm currently available for freelance work and exciting full-time opportunities.
+          <br>
+          <br>
+        </div>
+        <div class="contact-btn-row">
+          <a href="mailto:narayanamsrinija@gmail.com" class="contact-btn">
+            <i class="fas fa-paper-plane"></i> Send Me an Email
+          </a>
+          <a href="Srinija Resume.pdf" class="contact-btn secondary">
+            <i class="fas fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="mailto:narayanamsrinija@gmail.com" target="_blank" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://github.com/srinija592" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/satya-srinija-narayanam-96b7952ba" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://x.com/narayanams60354" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="footer-text">
+      &copy; 2025 Narayanam Satya Srinija. Built with HTML, CSS, and JavaScript.
+    </div>
+    <br>
+    <br>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
