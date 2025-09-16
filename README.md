@@ -26,4 +26,4 @@ A responsive Personal Portfolio Website built using HTML, CSS, and JavaScript. I
 
 # Live Demo
 
-https://srinija592.github.io/Personal-portfolio-website/
+https://srinija-portfolio-site.netlify.app/
