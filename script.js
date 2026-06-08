@@ -1,24 +1,102 @@
+// Active Navbar Highlight
 const sections = [...document.querySelectorAll('section[id]')];
 const navLinks = document.querySelectorAll('.nav-list a');
+
 window.addEventListener('scroll', () => {
-      let cur = sections[0].id;
-      for (const sec of sections) {
-        if (window.scrollY + 110 >= sec.offsetTop) cur = sec.id;
-      }
-      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href').substring(1) === cur));
-    });
-    document.getElementById('scrollArrow').addEventListener('click', function() {
-      const navHeight = document.querySelector('nav').offsetHeight || 0;
-      const aboutSection = document.getElementById('about');
-      const top = aboutSection.getBoundingClientRect().top + window.pageYOffset - navHeight;
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        const href = this.getAttribute('href');
-        if(href.startsWith('#')) {
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({behavior:'smooth'});
-        }
+
+  let cur = sections[0].id;
+
+  for (const sec of sections) {
+    if (window.scrollY + 110 >= sec.offsetTop) {
+      cur = sec.id;
+    }
+  }
+
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      'active',
+      link.getAttribute('href').substring(1) === cur
+    );
+  });
+
+});
+
+// Scroll Arrow
+document.getElementById('scrollArrow').addEventListener('click', function () {
+
+  const navHeight = document.querySelector('nav').offsetHeight || 0;
+
+  const aboutSection = document.getElementById('about');
+
+  const top =
+    aboutSection.getBoundingClientRect().top +
+    window.pageYOffset -
+    navHeight;
+
+  window.scrollTo({
+    top,
+    behavior: 'smooth'
+  });
+
+});
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+  anchor.addEventListener('click', function (e) {
+
+    const href = this.getAttribute('href');
+
+    if (href.startsWith('#')) {
+
+      e.preventDefault();
+
+      document.querySelector(href).scrollIntoView({
+        behavior: 'smooth'
       });
+
+    }
+
+  });
+
+});
+
+// Show More / Show Less Projects
+const showMoreBtn = document.getElementById("showMoreBtn");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+let expanded = false;
+
+showMoreBtn.addEventListener("click", () => {
+
+  if (!expanded) {
+
+    hiddenProjects.forEach(project => {
+      project.style.display = "block";
     });
+
+    showMoreBtn.innerHTML = `
+      Show Less <i class="fas fa-angle-up"></i>
+    `;
+
+    showMoreBtn.classList.add("active");
+
+    expanded = true;
+
+  } else {
+
+    hiddenProjects.forEach(project => {
+      project.style.display = "none";
+    });
+
+    showMoreBtn.innerHTML = `
+      Show More <i class="fas fa-angle-down"></i>
+    `;
+
+    showMoreBtn.classList.remove("active");
+
+    expanded = false;
+
+  }
+
+});
