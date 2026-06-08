@@ -284,6 +284,38 @@
     }
     .project-card p { color: var(--text-faded); font-size: 0.95em; margin-bottom: 1.2em; }
 
+    .hidden-project{
+      display:none;
+    }
+
+    .show-more-container{
+      text-align:center;
+      margin-top:25px;
+    }
+
+    .show-more-text{
+      font-size:18px;
+      font-weight:600;
+      color:#7b6dff;
+      cursor:pointer;
+      transition:0.3s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .show-more-text i{
+      transition:0.3s ease;
+    }
+
+    .show-more-text:hover{
+      color:#6356ff;
+    }
+
+    .show-more-text.active i{
+      transform:rotate(180deg);
+    }
+    
     /* Hover overlay buttons */
     .project-overlay {
       position: absolute;
